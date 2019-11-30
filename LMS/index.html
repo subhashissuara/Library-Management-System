@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Library Management System</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img id="logo" src="./Images/XUB.png" alt="XUB Logo" height="80" width="80"></a>
+        <p id="nav-heading">Xavier University Bhubaneswar Library</p>
+        <nav>
+            <ul>
+                <li id="nav_home"><a href="./index.html">Home</a></li>
+                <li id="nav_login"><a href="#modal">Login</a></li>
+                <div class="modal_container" id="modal">
+                    <div class="modal">
+                        <a href="#" class="close">X</a>
+                        <span class="modal_heading">
+                            Enter Your Details
+                        </span>
+                        <div id="hide">
+                            <form action="#" onsubmit="Login(); return accountFlag">
+                                <input type="text" placeholder="Username" id="username" required><br>
+                                <input type="password" placeholder="Password" id="password" required><br>
+                                <input type="submit" class="btnRegister" value="Login">
+                            </form>
+                            <a href="#" class="forgotPassword">
+                                Forgot Password?
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <li id="nav_register"><a href="#modal_register">Sign Up</a></li>
+                <div class="modal_container_register" id="modal_register">
+                    <div class="modal_register">
+                        <a href="#" class="close_register">X</a>
+                        <span class="modal_heading_register">
+                            Enter Your Details
+                        </span>
+                        <div id="hide_register">
+                            <form action="#" onsubmit="Register(); return accountFlag">
+                                <input type="text" placeholder="Name" required><br>
+                                <input type="text" placeholder="Username" required><br>
+                                <input type="password" placeholder="Password" required><br>
+                                <input type="submit" class="btnRegister_register" value="Register">
+                            </form>
+                            <a href="#modal" class="signin_register">
+                                Have an account already?
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div id="welcome-content">
+        <div id="search">
+            <input type="text" placeholder="Search for Books..." id="searchedQuery">
+            <button onclick="Search()"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <div id="catalogue">
+        <p id="heading">New Arrivals</p>
+        <div id="slideshow">
+            <div id="slide-wrapper">
+                <div id="slide">
+                    <img src="./Images/1.jpg" alt="Book 1" width="55%" id="slide-image">
+                </div>
+                <div id="slide">
+                    <img src="./Images/2.jpg" alt="Book 2" width="55%" id="slide-image">
+                </div>
+                <div id="slide">
+                    <img src="./Images/3.jpg" alt="Book 3" width="55%" id="slide-image">
+                </div>
+                <div id="slide">
+                    <img src="./Images/4.jpg" alt="Book 4" width="55%" id="slide-image">
+                </div>
+                <div id="slide">
+                    <img src="./Images/5.jpg" alt="Book 5" width="55%" id="slide-image">
+                </div>
+                <div id="slide">
+                    <img src="./Images/6.jpg" alt="Book 6" width="55%" id="slide-image">
+                </div>
+                <div id="slide">
+                    <img src="./Images/7.jpg" alt="Book 7" width="55%" id="slide-image">
+                </div>
+                <div id="slide">
+                    <img src="./Images/8.jpg" alt="Book 8" width="55%" id="slide-image">
+                </div>
+                <div id="slide">
+                    <img src="./Images/9.jpg" alt="Book 9" width="55%" id="slide-image">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <footer>
+        <a href="https://xub.edu.in/" target="_blank"><img src="./Images/XUB.png" alt="XUB Logo" id="xub_logo"></a>
+        <a href="https://xcomp.edu.in/" target="_blank"><img src="./Images/xcomplogo.png" alt="XUB Logo"
+                id="xcomp_logo"></a>
+        <div id="footerContact">
+            <p>
+                Email: library@xub.edu.in<br>
+                Phone: 1234567890<br>
+                Copyright &copy2019 All rights reserved
+            </p>
+        </div>
+    </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>
